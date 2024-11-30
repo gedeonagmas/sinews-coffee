@@ -55,7 +55,7 @@ const Blog2Column = () => {
 
   return (
     <Layout>
-      <Breadcumb pageName={"News & Event Details"} />
+      <Breadcumb pageName={"News & Event"} />
       <div className="blog-section style-6 bg-3">
         <div className="container">
           <div className="row justify-content-center">
@@ -89,7 +89,10 @@ const Blog2Column = () => {
                         <div className="em-blog-title">
                           <h2>
                             {" "}
-                            <Link legacyBehavior href={`/blog-details?id=${item?.id}`}>
+                            <Link
+                              legacyBehavior
+                              href={`/blog-details?id=${item?.id}`}
+                            >
                               <a>
                                 {" "}
                                 {item?.eventName?.length > 45

@@ -62,7 +62,18 @@ const ProductHome = () => {
             {currentEvents.map((item) => (
               <div className="case-study-single-box">
                 <div className="case-study-thumb">
-                  <img src="assets/images/project/case3.png" alt />
+                  <div
+                    style={{ position: "relative", height: "300px" }}
+                    className="thumb"
+                  >
+                    <Image
+                      src={`${process.env.NEXT_PUBLIC_API_URL}/storage/${item.banner}`}
+                      alt={item.title || "product Image"}
+                      fill
+                      style={{ objectFit: "cover" }}
+                      objectFit="cover" // Ensures consistent aspect ratio
+                    />
+                  </div>
                   <div className="case-study-content">
                     <div className="case-study-title">
                       <h6>

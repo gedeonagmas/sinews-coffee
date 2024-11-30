@@ -58,18 +58,19 @@ const Team = () => {
       <div className="about-area style-three upper1">
         <div className="container">
           <div className="row align-items-center">
-            <div className="col-lg-6 col-md-12 ">
+            <div className="col-lg-6 col-md-12">
               <div className="consen-section-title">
-                <h5> About Consen </h5>
+                <h5> About Sinews Coffee </h5>
                 <h2>
-                  {" "}
-                  We Are Global Stakeholder Over 2000+ <span> Companies </span>
+                  We Are Proud Suppliers of Premium Ethiopian Coffee to Over
+                  2000+ <span>Customers</span>
                 </h2>
                 <p className="about-text1">
-                  {" "}
-                  Appropriately enhance principle-centered innovation rather
-                  than high standards in platforms. Credibly orchestrate
-                  functional.{" "}
+                  Sinews Coffee specializes in bringing you the finest,
+                  handpicked coffee beans from Ethiopia. We focus on quality,
+                  sustainability, and enriching the coffee-growing communities
+                  by directly supporting farmers and promoting eco-friendly
+                  practices.
                 </p>
               </div>
               <div className="dreamit-icon-box">
@@ -77,11 +78,17 @@ const Team = () => {
                   <ul>
                     <li>
                       <i className="bi bi-arrow-right-circle" />{" "}
-                      <span> Communicate orthogonal process</span>
+                      <span>
+                        {" "}
+                        Sourcing premium coffee directly from Ethiopian farms
+                      </span>
                     </li>
                     <li>
                       <i className="bi bi-arrow-right-circle" />{" "}
-                      <span> Professionally grow cutting-edge paradigms </span>
+                      <span>
+                        {" "}
+                        Empowering local farmers through direct partnerships
+                      </span>
                     </li>
                   </ul>
                 </div>
@@ -91,16 +98,14 @@ const Team = () => {
                 <ProgressBar value={95} />
                 <div className="circle-progress-title">
                   <h4>
-                    {" "}
-                    Clients <br /> Satisfactions{" "}
+                    Customer <br /> Satisfaction
                   </h4>
                 </div>
                 <div className="extra-progress">
-                  <ProgressBar value={85} />
+                  <ProgressBar value={90} />
                   <div className="circle-progress-title">
                     <h4>
-                      {" "}
-                      Clients <br /> Satisfactions{" "}
+                      Premium Coffee <br /> Quality
                     </h4>
                   </div>
                 </div>
@@ -108,56 +113,37 @@ const Team = () => {
               <div className="about-button">
                 <Link legacyBehavior href="/about">
                   <a>
-                    {" "}
-                    <i className="bi bi-gear" /> More About{" "}
+                    <i className="bi bi-gear" /> Learn More About Sinews Coffee
                   </a>
                 </Link>
               </div>
             </div>
             <div className="col-lg-6 col-md-12">
               <div className="dreamit-about-thumb">
-                <img src="assets/images/about/about-2.png" alt />
+                <img
+                  src="assets/images/about/about-2.png"
+                  alt="Sinews Coffee"
+                />
                 {/* about-shape */}
                 <div className="about-shape-thumb1 bounce-animate2">
-                  <img src="assets/images/about/about-shpe.png" alt />
+                  <img src="assets/images/about/about-shpe.png" alt="Shape" />
                 </div>
                 <div className="about-shape-thumb3 bounce-animate4">
-                  <img src="assets/images/about/about-shape4.png" alt />
+                  <img src="assets/images/about/about-shape4.png" alt="Shape" />
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
+
       {/*==================================================*/}
       {/* End consen about Area */}
       {/*==================================================*/}
       {/*==================================================*/}
       {/* Start Brand Section */}
       {/*===================================================*/}
-      <div className="brand-section upper1">
-        <div className="container">
-          <div className="row">
-            <Swiper {...brandListProps} className="brand-list owl-carousel">
-              <SwiperSlide className="single-brand">
-                <img src="assets/images/resource/brand-1.png" alt="Brand" />
-              </SwiperSlide>
-              <SwiperSlide className="single-brand">
-                <img src="assets/images/resource/brand-2.png" alt="Brand" />
-              </SwiperSlide>
-              <SwiperSlide className="single-brand">
-                <img src="assets/images/resource/brand-3.png" alt="Brand" />
-              </SwiperSlide>
-              <SwiperSlide className="single-brand">
-                <img src="assets/images/resource/brand-4.png" alt="Brand" />
-              </SwiperSlide>
-              <SwiperSlide className="single-brand">
-                <img src="/assets/images/resource/brand-5.png" alt="Brand" />
-              </SwiperSlide>
-            </Swiper>
-          </div>
-        </div>
-      </div>
+
       {/*==================================================*/}
       {/* Start consen Team Area */}
       {/*==================================================*/}
