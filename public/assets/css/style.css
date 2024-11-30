@@ -2408,7 +2408,7 @@ p.about-text1 {
 
 .case-study-single-box {
   border-radius: 3px;
-  margin-bottom: 30px;
+  margin-bottom: 3px;
 }
 
 /*case thumb*/
@@ -2452,7 +2452,7 @@ p.about-text1 {
   font-size: 17px;
   color: #ff3c00;
   font-weight: 500;
-  padding: 0 0 0 32px;
+  padding: 0 0 0 3px;
   position: relative;
   transition: 0.5s;
 }
@@ -2497,7 +2497,7 @@ p.about-text1 {
 
 /*case all hover*/
 .case-study-thumb:hover .case-study-content {
-  bottom: 28px;
+  bottom: 0px;
 }
 
 .case-study-thumb:hover .case-button a {

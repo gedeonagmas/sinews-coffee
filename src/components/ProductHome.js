@@ -60,20 +60,16 @@ const ProductHome = () => {
           {/* <div className=""> */}
           <div className="row">
             {currentEvents.map((item) => (
-              <div className="case-study-single-box">
+              <div
+                style={{ marginTop: "-100px" }}
+                className="case-study-single-box"
+              >
                 <div className="case-study-thumb">
-                  <div
-                    style={{ position: "relative", height: "300px" }}
-                    className="thumb"
-                  >
-                    <Image
-                      src={`${process.env.NEXT_PUBLIC_API_URL}/storage/${item.banner}`}
-                      alt={item.title || "product Image"}
-                      fill
-                      style={{ objectFit: "cover" }}
-                      objectFit="cover" // Ensures consistent aspect ratio
-                    />
-                  </div>
+                  <img
+                    style={{ height: "350px", width: "350px", margin: "10px" }}
+                    src={`${process.env.NEXT_PUBLIC_API_URL}/storage/${item.banner}`}
+                    alt
+                  />
                   <div className="case-study-content">
                     <div className="case-study-title">
                       <h6>

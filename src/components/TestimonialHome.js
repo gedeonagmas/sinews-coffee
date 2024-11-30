@@ -88,7 +88,7 @@ const TestimonialHome = () => {
             {currentProducts?.map((item) => (
               <SwiperSlide className="pr-1">
                 <div
-                  style={{ height: "340px" }}
+                  style={{ height: "434px" }}
                   className="testimonial-single-box"
                 >
                   <div className="testimonial-content1">
@@ -117,7 +117,7 @@ const TestimonialHome = () => {
                         }}
                       ></p>
                     </div>
-                    <div className="em-testi-start-icon">
+                    <div style={{marginTop:'-30px'}} className="em-testi-start-icon">
                       <i className="bi bi-star-fill" />
                       <i className="bi bi-star-fill" />
                       <i className="bi bi-star-fill" />
