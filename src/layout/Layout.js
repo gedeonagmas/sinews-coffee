@@ -6,6 +6,7 @@ import Footer from "./footer/Footer";
 import Header from "./header/Header";
 import MobileMenu from "./header/MobileMenu";
 import ScrollTop from "./ScrollTop";
+import Cta from "../components/Cta";
 const Layout = ({ children, header, footer }) => {
   useEffect(() => {
     animation();
@@ -19,6 +20,7 @@ const Layout = ({ children, header, footer }) => {
       <Header header={header} />
       <MobileMenu />
       {children}
+      <Cta />
       <Footer footer={footer} />
       <ScrollTop />
     </Fragment>

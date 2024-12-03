@@ -4,7 +4,7 @@ import Faqs from "@/src/components/Faqs";
 import LogoSlider from "@/src/components/LogoSlider";
 import TestimonialHome from "@/src/components/TestimonialHome";
 import Layout from "@/src/layout/Layout";
-import { testimonial_list_slider } from "@/src/sliderProps";
+import { caseStudyProps, testimonial_list_slider } from "@/src/sliderProps";
 import axios from "axios";
 import Link from "next/link";
 import { useEffect, useState } from "react";
@@ -154,7 +154,6 @@ const About = () => {
                     {/* / tabs_item */}
                     <Tab.Pane eventKey={"t2"} className="tabs_item">
                       <img
-                      
                         src="assets/images/resource/img-22.png"
                         alt="Our mission"
                       />
@@ -172,7 +171,6 @@ const About = () => {
                     {/* / tabs_item */}
                     <Tab.Pane eventKey={"t3"} className="tabs_item">
                       <img
-                     
                         src="assets/images/resource/img-33.png"
                         alt="Our vision"
                       />
@@ -287,28 +285,41 @@ const About = () => {
             </div>
           </div>
           <div className="row">
-            {currentEvents?.map((item) => {
-              return (
-                <div className="col-lg-4 col-md-6">
-                  <div className="single_team">
-                    <div className="single_team_thumb1">
-                      <img
-                        src={`${process.env.NEXT_PUBLIC_API_URL}/storage/${item.image}`}
-                        alt="logo"
-                      />
-                    </div>
-                    <div className="single_team_content">
-                      <div className="team-title">
-                        <h4>
-                          {item?.title} {item?.full_name}
-                        </h4>
-                        <span>{item?.position}</span>
+            <Swiper {...caseStudyProps} className="case-study owl-carousel">
+              {currentEvents?.map((item) => {
+                return (
+                  <SwiperSlide>
+                    <div className="case-study-single-box">
+                      <div className="case-study-thumb">
+                        <img
+                          src={`${process.env.NEXT_PUBLIC_API_URL}/storage/${item.image}`}
+                          alt="logo"
+                        />
+                        <div className="case-study-content">
+                          <div className="case-study-title">
+                            <h6>
+                              {" "}
+                              {item?.title} {item?.full_name}{" "}
+                            </h6>
+                            <h3>
+                              {" "}
+                              <Link legacyBehavior href="/">
+                                <a> {item?.position}</a>
+                              </Link>
+                            </h3>
+                          </div>
+                          <div className="case-button">
+                            <Link legacyBehavior href="/">
+                              <a></a>
+                            </Link>
+                          </div>
+                        </div>
                       </div>
                     </div>
-                  </div>
-                </div>
-              );
-            })}
+                  </SwiperSlide>
+                );
+              })}
+            </Swiper>
           </div>
         </div>
         <div
@@ -338,28 +349,7 @@ const About = () => {
       {/*==================================================*/}
       {/* Start consen Subscribe Area */}
       {/*==================================================*/}
-      <div className="subscribe-area style-two mt-5 mt-sm-0">
-        <div className="container">
-          <div className="subscribe">
-            <div className="row align-items-center">
-              <div className="col-lg-4 col-md-12">
-                <div className="subscribe-title">
-                  <h1>Get Your Free Coffee Business Consultation</h1>
-                </div>
-              </div>
-              <div className="col-lg-8 col-md-12">
-                <a href="tel:09837393403" className="subscribe-icon">
-                  <i className="bi bi-telephone-inbound" />
-                </a>
-                <div className="subscribe-title2">
-                  <h1> +251 954 104 637 </h1>
-                  <p> info@sinews.com </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+      
       {/*==================================================*/}
       {/* End consen Subscribe Area */}
       {/*==================================================*/}

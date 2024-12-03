@@ -1,21 +1,12 @@
 import Link from "next/link";
+import { useRouter } from "next/router";
 import { Fragment, useState } from "react";
 
 const MobileMenu = () => {
   const [toggle, setToggle] = useState(false);
-  const [activeMenu, setActiveMenu] = useState("");
-  const [subMenus, setSubMenus] = useState("");
-  const activeMenuSet = (value) =>
-      setActiveMenu(activeMenu === value ? "" : value),
-    activeBtn = (value) => (value === activeMenu ? "-" : "+"),
-    activeLi = (value) =>
-      value === activeMenu ? { display: "block" } : { display: "none" },
-    setSub = (value, motherMenu) =>
-      motherMenu === activeMenu && value == subMenus
-        ? setSubMenus("")
-        : setSubMenus(value),
-    activeSub = (value) =>
-      value === subMenus ? { display: "block" } : { display: "none" };
+  const router = useRouter();
+  const currentURL = router.asPath;
+
   return (
     <div className="mobile-menu-area d-sm-block d-md-block d-lg-none header____">
       <div className="mobile-menu mean-container">
@@ -39,29 +30,52 @@ const MobileMenu = () => {
               style={{ display: toggle ? "block" : "none" }}
             >
               <li>
-                <a href="/">Home </a>
+                <a style={{ color: currentURL === "/" ? "red" : "" }} href="/">
+                  Home{" "}
+                </a>
               </li>
               <li>
-                <a href="/about">About </a>
+                <a
+                  style={{ color: currentURL === "/about" ? "red" : "" }}
+                  href="/about"
+                >
+                  About{" "}
+                </a>
               </li>
-              <li>
+              {/* <li>
                 <a href="/team">Team </a>
+              </li> */}
+              <li>
+                <a
+                  style={{ color: currentURL === "/service" ? "red" : "" }}
+                  href="/service"
+                >
+                  Services{" "}
+                </a>
               </li>
               <li>
-                <a href="/service">Services </a>
-              </li>
-              <li>
-                <Link legacyBehavior href="/product">
+                <a
+                  style={{ color: currentURL === "/product" ? "red" : "" }}
+                  href="/product"
+                >
                   Product
-                </Link>
+                </a>
               </li>
               <li>
-                <a href="/blog">News & Event </a>
+                <a
+                  style={{ color: currentURL === "/blog" ? "red" : "" }}
+                  href="/blog"
+                >
+                  News & Event{" "}
+                </a>
               </li>
               <li className="mean-last">
-                <Link legacyBehavior href="contact">
+                <a
+                  style={{ color: currentURL === "/contact" ? "red" : "" }}
+                  href="contact"
+                >
                   Contact
-                </Link>
+                </a>
               </li>
             </ul>
           </nav>
