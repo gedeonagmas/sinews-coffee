@@ -1,10 +1,7 @@
 "use client";
-import BlogSidebar from "@/src/components/BlogSidebar";
 import Breadcumb from "@/src/components/Breadcumb";
-import PagginationFuntion from "@/src/components/PagginationFuntion";
 import Pagination from "@/src/components/Pagination";
 import Layout from "@/src/layout/Layout";
-import { getPagination, pagination } from "@/src/utils";
 import axios from "axios";
 import Image from "next/image";
 import Link from "next/link";

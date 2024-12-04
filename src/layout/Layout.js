@@ -1,6 +1,5 @@
 import { Fragment, useEffect } from "react";
 import ImageView from "../components/ImageView";
-import VideoPopup from "../components/VideoPopup";
 import { animation, stickyNav } from "../utils";
 import Footer from "./footer/Footer";
 import Header from "./header/Header";
@@ -16,7 +15,7 @@ const Layout = ({ children, header, footer }) => {
   return (
     <Fragment>
       <ImageView />
-      <VideoPopup />
+      {/* <VideoPopup /> */}
       <Header header={header} />
       <MobileMenu />
       {children}
