@@ -12,12 +12,13 @@ const Cta = () => {
               </div>
             </div>
             <div className="col-lg-8 col-md-12">
-              <a href="tel:09837393403" className="subscribe-icon">
+              <a href="tel:0911259663" className="subscribe-icon">
                 <i className="bi bi-telephone-inbound" />
               </a>
               <div className="subscribe-title2">
-                <h1> +251 954 104 637 </h1>
-                <p> info@sinews.com </p>
+                <h1> +251 91 125 9663 </h1>
+                <h1> +251 91 250 1945 </h1>
+                <p> sinewsgeneral@gmail.com </p>
               </div>
             </div>
           </div>

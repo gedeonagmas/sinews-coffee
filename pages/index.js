@@ -94,7 +94,7 @@ const Index = () => {
                     height: "450px",
                     width: "500px",
                   }}
-                  src="assets/images/about/about-img.jpg"
+                  src="assets/images/about/about-img.png"
                   alt
                 />
                 {/* about-shape */}
@@ -122,7 +122,7 @@ const Index = () => {
               <div className="dreamit-icon-title">
                 <h4>
                   {" "}
-                  We are Since <span>2007 to Present</span> in Ethiopia{" "}
+                  We are Since <span>2008 G.C to Present</span> in Ethiopia{" "}
                 </h4>
               </div>
               <div className="dreamit-icon-list">
@@ -167,7 +167,7 @@ const Index = () => {
           <div className="row counter-vip">
             <div className="col-lg-12">
               <div className="couter-top-title">
-                <h3> Sinews Finished this Achievement in 12 Years </h3>
+                <h3> Sinews Finished this Achievement in 16 Years </h3>
               </div>
             </div>
             <div className="col-md-3 col-6">
@@ -261,7 +261,7 @@ const Index = () => {
       {/*==================================================*/}
       {/* Start consen process Area */}
       {/*==================================================*/}
-      <div className="process-area">
+      <div style={{ marginTop: "-70px" }} className="process-area">
         <div className="container">
           <div className="row align-items-center">
             <div className="col-lg-6 col-md-12">
@@ -348,10 +348,14 @@ const Index = () => {
                   Why Choose <span>Sinews</span> for Your Coffee Needs?
                 </h4>
                 <p>
-                  We source the finest beans from trusted farmers and bring them
-                  to you through expert roasting and guaranteed freshness. Our
-                  coffee is delivered globally, offering a premium experience at
-                  every step. Taste the difference with Sinews coffee.
+                  Vertical coffee sourcing is a notion that we live by at SINEWS
+                  BUSINESS PLC. We believe in bridging the gap between farmers
+                  and coffee drinkers nd advocates by sourcing exquisite coffee
+                  that is fully compliant with larger ideals of sustainability.
+                  both in terms of the environment and our personal health. it's
+                  a philosophy in which quality goes hand in hand with
+                  thoughtful sourcing. long term relations with importers,
+                  origin commitment, and sustainable sourcing practices.
                 </p>
               </div>
               <div className="about-button">
@@ -379,7 +383,7 @@ const Index = () => {
       {/*==================================================*/}
       {/* Start consen Blog Area */}
       {/*==================================================*/}
-      <div className="blog-area blog-new">
+      <div style={{ marginTop: "-140px" }} className="blog-area blog-new">
         <div className="container">
           <div className="row align-items-center mb-40">
             <div className="col-lg-7 col-md-8">
@@ -405,8 +409,6 @@ const Index = () => {
           <BlogHome />
         </div>
       </div>
-
-    
     </Layout>
   );
 };

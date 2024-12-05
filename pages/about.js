@@ -335,24 +335,29 @@ const About = () => {
           )}
         </div>
       </div>
-      {/*==================================================*/}
-      {/* End consen Team Area */}
-      {/*==================================================*/}
-      {/*==================================================*/}
-      {/* Start  FAQ Section */}
-      {/*===================================================*/}
 
-      {/*==================================================*/}
-      {/*Start  Brand Section */}
-      {/*===================================================*/}
-
-      {/*==================================================*/}
-      {/* Start consen Subscribe Area */}
-      {/*==================================================*/}
-      
-      {/*==================================================*/}
-      {/* End consen Subscribe Area */}
-      {/*==================================================*/}
+      <div  style={{marginTop:'-140px'}} className="team_area style-two upp">
+        <div className="container">
+          <div className="row">
+            <div className="col-lg-12">
+              <div className="consen-section-title upper text-center pb-60">
+                <h5> Membership </h5>
+                <h2>
+                  {" "}
+                  Sister <span> Companies </span>
+                </h2>
+              </div>
+            </div>
+          </div>
+          <div className="row">
+            <div className="case-study-single-box">
+              <div style={{marginTop:'-30px'}} className="">
+                <img style={{width:'100%',}} src="assets/images/slider/member.png" alt="logo" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </Layout>
   );
 };
